@@ -1,25 +1,50 @@
-# Gemini PDF Chatbot
+Gemini PDF Chatbot
 
-This project provides a chatbot interface to interact with PDF files using the Gemini AI model.
+This is a Streamlit application that allows users to upload PDFs and ask questions about the content. The application uses Langchain and Google Generative AI to process the PDFs and answer the user's questions in a conversational way.
 
-## Installation
+Features
 
-First, clone this repository:
+Upload multiple PDFs
+Ask questions about the content of the PDFs
+Get answers in a conversational format
+Clear chat history
+Requirements
 
-<!-- start:code block -->
-```sh
-# Clone this repository
-git clone <repository-url>
-cd gemini-pdf-chatbot
+Python 3.6 or later
+Streamlit
+Langchain
+PyPDF2
+Google Generative AI library
+dotenv
+Installation
 
-# Install dependencies
-pip install -r requirements.txt
+Clone this repository.
+Create a virtual environment and activate it.
+Install the required libraries:
+Bash
+pip install streamlit langchain PyPDF2 genai dotenv
+Use code with caution.
+content_copy
+Create a file named .env in the root directory of the project and add your Google API key:
+GOOGLE_API_KEY=your_api_key
+How to Use
 
-# Copy the example .env file
-cp .env.example .env
+Run the application:
+Bash
+streamlit run main.py
+Use code with caution.
+content_copy
+Upload your PDFs in the sidebar.
+Click the "Submit & Process" button.
+Once processing is complete, ask your questions in the chat interface.
+Example Usage
 
-# Run the app
-streamlit run app.py
+Imagine you have two PDFs, one about astronomy and one about history. You can upload both PDFs to the application and then ask questions like "What is the biggest star in the Milky Way?" or "What was the capital of ancient Rome?". The application will search the PDFs for the answer and provide you with a response.
 
-# Open http://localhost:8501 in your browser
-open http://localhost:8501
+Contributing
+
+We welcome contributions to this project. Please see the CONTRIBUTING.md file for details.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
