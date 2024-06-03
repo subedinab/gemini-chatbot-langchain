@@ -5,7 +5,8 @@ Gemini PDF Chatbot is a Streamlit-based application that allows users to chat wi
 
 <https://github.com/subedinab/gemini-chatbot-langchain>
 # Demo
-[![A demo of the Gemini PDF Chatbot](https://img.youtube.com/vi/YjQwM7QprKI/default.jpg)](https://www.youtube.com/watch?v=YjQwM7QprKI)
+[![Chatbot Demo](https://github.com/subedinab/gemini-chatbot-langchain/blob/master/faiss_index/thubnail.png)](https://www.youtube.com/watch?v=VIDEO_ID)
+
 
 
 
