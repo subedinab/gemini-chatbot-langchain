@@ -1,50 +1,87 @@
-Gemini PDF Chatbot
+# Gemini PDF Chatbot
 
-This is a Streamlit application that allows users to upload PDFs and ask questions about the content. The application uses Langchain and Google Generative AI to process the PDFs and answer the user's questions in a conversational way.
+Gemini PDF Chatbot is a Streamlit-based application that allows users to chat with a conversational AI model trained on PDF documents. The chatbot extracts information from uploaded PDF files and answers user questions based on the provided context.
+<https://gemini-chatbot-langchain-b8tcswnjvmw4tdr2hynbx2.streamlit.app//>
 
-Features
+<https://github.com/subedinab/gemini-chatbot-langchain>
 
-Upload multiple PDFs
-Ask questions about the content of the PDFs
-Get answers in a conversational format
-Clear chat history
-Requirements
+## Features
 
-Python 3.6 or later
-Streamlit
-Langchain
-PyPDF2
-Google Generative AI library
-dotenv
-Installation
+- **PDF Upload:** Users can upload multiple PDF files.
+- **Text Extraction:** Extracts text from uploaded PDF files.
+- **Conversational AI:** Uses the Gemini conversational AI model to answer user questions.
+- **Chat Interface:** Provides a chat interface to interact with the chatbot.
 
-Clone this repository.
-Create a virtual environment and activate it.
-Install the required libraries:
-Bash
-pip install streamlit langchain PyPDF2 genai dotenv
-Use code with caution.
-content_copy
-Create a file named .env in the root directory of the project and add your Google API key:
-GOOGLE_API_KEY=your_api_key
-How to Use
+## Getting Started
 
-Run the application:
-Bash
-streamlit run main.py
-Use code with caution.
-content_copy
-Upload your PDFs in the sidebar.
-Click the "Submit & Process" button.
-Once processing is complete, ask your questions in the chat interface.
-Example Usage
+If you have docker installed, you can run the application using the following command:
 
-Imagine you have two PDFs, one about astronomy and one about history. You can upload both PDFs to the application and then ask questions like "What is the biggest star in the Milky Way?" or "What was the capital of ancient Rome?". The application will search the PDFs for the answer and provide you with a response.
+- Obtain a Google API key and set it in the `.env` file.
 
-Contributing
+   ```.env
+   GOOGLE_API_KEY=your_api_key_here
+   ```
 
-We welcome contributions to this project. Please see the CONTRIBUTING.md file for details.
 
-License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+Your application will be available at <http://localhost:8501>.
+
+## Local Development
+
+Follow these instructions to set up and run this project on your local machine.
+
+   **Note:** This project requires Python 3.10 or higher.
+
+1. **Clone the Repository:**
+
+   ```bash
+   git clone https://github.com/subedinab/gemini-chatbot-langchain.git
+   ```
+
+2. **Install Dependencies:**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set up Google API Key:**
+   - Obtain a Google API key and set it in the `.env` file.
+
+   ```bash
+   GOOGLE_API_KEY=your_api_key_here
+   ```
+
+4. **Run the Application:**
+
+   ```bash
+   streamlit run main.py
+   ```
+
+5. **Upload PDFs:**
+   - Use the sidebar to upload PDF files.
+   - Click on "Submit & Process" to extract text and generate embeddings.
+
+6. **Chat Interface:**
+   - Chat with the AI in the main interface.
+   - Collect User Information: If the chatbot prompts you to provide contact details, fill out the form and click "Submit."
+
+## Project Structure
+
+- `app.py`: Main application script.
+- `.env`: file which will contain your environment variable.
+- `requirements.txt`: Python packages required for working of the app.
+- `README.md`: Project documentation.
+
+## Dependencies
+
+- PyPDF2
+- langchain
+- Streamlit
+- langchain-community
+- google.generativeai
+- dotenv
+
+## Acknowledgments
+
+- [Google Gemini](https://ai.google.com/): For providing the underlying language model.
+- [Streamlit](https://streamlit.io/): For the user interface framework.
